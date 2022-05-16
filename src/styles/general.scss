@@ -3,13 +3,14 @@
 
 // Fonts => npm install @fontsource/montserrat
 //  fontsource: https:fontsource.org/fonts/montserrat
-// @import '~@fontsource/montserrat/index.css';
-// @import '~@fontsource/montserrat/700.css';
+@import "~@fontsource/montserrat/index.css";
+@import "~@fontsource/montserrat/700.css";
 
-$fa-font-path: "./webfonts";
+$fa-font-path: "~font-awesome/fonts";
 
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
 // @import "~@fortawesome/fontawesome-free/scss/solid.scss";
-// @import "~@fortawesome/fontawesome-free/scss/regular.scss";
+// // @import "~@fortawesome/fontawesome-free/scss/regular.scss";
 
 @import "./vars";
 

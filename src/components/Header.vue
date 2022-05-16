@@ -9,7 +9,12 @@
             class="img-fluid"
           />
         </div>
-        <div class="col-7 col-md-8 col-lg-3 menu">Menu</div>
+        <div class="col-7 col-md-8 col-lg-3 menu d-flex justify-content-end">
+          <ul>
+            <li class="px-2"><i class="fa-solid fa-cart-shopping"></i></li>
+            <li class="px-2"><i class="fa-solid fa-bars"></i></li>
+          </ul>
+        </div>
       </div>
       <!-- *********** -->
       <div
@@ -44,6 +49,7 @@ export default { name: "Header" };
 
 <style scoped lang="scss">
 @import "../styles/general.scss";
+
 #jumbotron {
   height: 980px;
   position: relative;
@@ -51,6 +57,14 @@ export default { name: "Header" };
   background-position: center;
   background-size: cover;
   background-image: url("../assets/img/avadabarbers-homepage-hero-bg.jpg");
+}
+
+ul {
+  list-style: none;
+  li {
+    display: inline-block;
+    font-size: 26px;
+  }
 }
 
 .display-5 {
