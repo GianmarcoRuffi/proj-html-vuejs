@@ -24,12 +24,14 @@
           </p>
         </div>
 
-        <div class="col-7 col-md-8 col-lg-6 d-flex">
-          <img
-            src="../assets/img/avadabarbers_hero_focalmirror.png"
-            alt="barber"
-            class="img-fluid"
-          />
+        <div class="col-7 col-md-8 col-lg-6 d-flex py-2">
+          <div class="col-lg-11">
+            <img
+              src="../assets/img/avadabarbers_hero_focalmirror.png"
+              alt="barber"
+              class="img-fluid"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -66,6 +68,7 @@ hr.ochre {
 
 hr {
   font-size: 10px;
+  opacity: 1;
 }
 
 .my-btn {
