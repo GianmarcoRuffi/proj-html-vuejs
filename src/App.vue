@@ -4,6 +4,7 @@
     <Award />
     <services />
     <products />
+    <reviews />
   </div>
 </template>
 
@@ -12,10 +13,11 @@ import Header from "./components/Header.vue";
 import Award from "./components/Award.vue";
 import Services from "./components/Services.vue";
 import Products from "./components/Products.vue";
+import Reviews from "./components/Reviews.vue";
 
 export default {
   name: "App",
-  components: { Header, Award, Services, Products },
+  components: { Header, Award, Services, Products, Reviews },
 };
 </script>
 
