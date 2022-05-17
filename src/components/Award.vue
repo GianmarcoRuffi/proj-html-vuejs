@@ -1,7 +1,14 @@
 <template>
   <section id="about">
-    <titles text1="Award Winning" text2="Pro Barbers" />
-    <my-button text="Meet your new barber" />
+    <div
+      class="container d-flex flex-column justify-content-center align-items-center"
+    >
+      <div class="row">
+        <titles text1="Award Winning" text2="Pro Barbers" />
+      </div>
+
+      <div class="row"><my-button text="Meet your new barber" /></div>
+    </div>
 
     <div class="triangle">
       <svg
@@ -33,7 +40,7 @@ export default {
 @import "./src/styles/vars.scss";
 
 #about {
-  height: 580px;
+  height: 550px;
   position: relative;
   color: white;
   background-position: top;
