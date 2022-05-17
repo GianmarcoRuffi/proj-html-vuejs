@@ -6,8 +6,10 @@
       <div class="row">
         <titles text1="Mens Grooming" text2="Services" />
       </div>
+      <div class="row"><Card /></div>
       <div class="row"><my-button text="Read about our services" /></div>
     </div>
+
     <div class="triangle">
       <svg
         class="fusion-big-triangle-candy"
@@ -28,8 +30,9 @@
 <script>
 import myButton from "./myButton.vue";
 import Titles from "./Titles.vue";
+import Card from "./Card.vue";
 export default {
-  components: { myButton, Titles },
+  components: { myButton, Titles, Card },
   name: "Services",
 };
 </script>
@@ -38,7 +41,7 @@ export default {
 @import "./src/styles/vars.scss";
 
 #services {
-  height: 600px;
+  height: 950px;
   position: relative;
 }
 
