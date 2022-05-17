@@ -48,7 +48,7 @@ export default { name: "Header" };
 </script>
 
 <style scoped lang="scss">
-@import "../styles/general.scss";
+@import "./src/styles/vars.scss";
 
 #jumbotron {
   height: 980px;
@@ -95,6 +95,7 @@ hr {
   text-transform: uppercase;
   padding: 5px;
   width: 200px;
+  font-family: Arial, Helvetica, sans-serif;
 
   &:hover {
     color: white;

@@ -21,7 +21,7 @@ export default { name: "MainContent" };
 </script>
 
 <style scoped lang="scss">
-@import "../styles/general.scss";
+@import "./src/styles/vars.scss";
 
 #about {
   height: 480px;
@@ -72,6 +72,7 @@ hr {
   text-transform: uppercase;
   padding: 5px;
   width: 300px;
+  font-family: Arial, Helvetica, sans-serif;
 
   &:hover {
     color: white;

@@ -1,10 +1,10 @@
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
 
-// Fonts => npm install @fontsource/montserrat
-//  fontsource: https:fontsource.org/fonts/montserrat
-@import "~@fontsource/montserrat/index.css";
-@import "~@fontsource/montserrat/700.css";
+// Fonts => npm install @fontsource/bodoni-moda
+//  fontsource: https:fontsource.org/fonts/bodoni-moda
+@import "~@fontsource/bodoni-moda/index.css";
+@import "~@fontsource/bodoni-moda/700.css";
 
 $fa-font-path: "~font-awesome/fonts";
 
@@ -14,8 +14,10 @@ $fa-font-path: "~font-awesome/fonts";
 
 @import "./vars";
 
+$ochre: #725936;
+
 body {
-  font-family: $main-font;
+  font-family: "Bodoni Moda", serif;
   // background-color: $bg-color;
   // color: $text-color;
 }

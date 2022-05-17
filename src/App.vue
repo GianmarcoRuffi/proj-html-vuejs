@@ -16,9 +16,9 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../src/styles/general.scss";
+@import "./src/styles/general.scss";
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Bodoni Moda", serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
