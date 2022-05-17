@@ -8,7 +8,7 @@
           <h2 class="display-3 py-2 ochre">Award Winning</h2>
           <h1 class="display-5 py-2">Pro barbers</h1>
           <p class="lead">
-            <a class="my-btn" href="#" role="button">Meet your new barber</a>
+            <my-button text="Meet your new barber" />
           </p>
         </div>
       </div>
@@ -32,14 +32,18 @@
 </template>
 
 <script>
-export default { name: "MainContent" };
+import myButton from "./myButton.vue";
+export default {
+  components: { myButton },
+  name: "Award",
+};
 </script>
 
 <style scoped lang="scss">
 @import "./src/styles/vars.scss";
 
 #about {
-  height: 480px;
+  height: 580px;
   position: relative;
   color: white;
   background-position: top;
@@ -84,23 +88,5 @@ hr.ochre {
 hr {
   font-size: 10px;
   opacity: 1;
-}
-
-.my-btn {
-  border: 2px solid $ochre;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: $ochre;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 5px;
-  width: 300px;
-  font-family: Arial, Helvetica, sans-serif;
-
-  &:hover {
-    color: white;
-    background-color: $ochre;
-  }
 }
 </style>

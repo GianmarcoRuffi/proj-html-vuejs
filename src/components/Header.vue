@@ -25,7 +25,7 @@
           <hr class="ochre" />
           <p class="lead py-2">The pinnacle of male grooming</p>
           <p class="lead">
-            <a class="my-btn" href="#" role="button">Learn more</a>
+            <my-button text="Learn More" />
           </p>
         </div>
 
@@ -44,7 +44,11 @@
 </template>
 
 <script>
-export default { name: "Header" };
+import myButton from "./myButton.vue";
+export default {
+  components: { myButton },
+  name: "Header",
+};
 </script>
 
 <style scoped lang="scss">
@@ -83,23 +87,5 @@ hr.ochre {
 hr {
   font-size: 10px;
   opacity: 1;
-}
-
-.my-btn {
-  border: 2px solid $ochre;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: $ochre;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 5px;
-  width: 200px;
-  font-family: Arial, Helvetica, sans-serif;
-
-  &:hover {
-    color: white;
-    background-color: $ochre;
-  }
 }
 </style>
