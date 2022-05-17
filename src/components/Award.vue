@@ -1,18 +1,7 @@
 <template>
   <section id="about">
-    <div class="container h-100">
-      <div class="row h-100 d-flex justify-content-center align-items-center">
-        <div
-          class="col-12 col-lg-12 d-flex justify-content-center align-items-center flex-column"
-        >
-          <h2 class="display-3 py-2 ochre">Award Winning</h2>
-          <h1 class="display-5 py-2">Pro barbers</h1>
-          <p class="lead">
-            <my-button text="Meet your new barber" />
-          </p>
-        </div>
-      </div>
-    </div>
+    <titles text1="Award Winning" text2="Pro Barbers" />
+    <my-button text="Meet your new barber" />
 
     <div class="triangle">
       <svg
@@ -33,8 +22,9 @@
 
 <script>
 import myButton from "./myButton.vue";
+import Titles from "./Titles.vue";
 export default {
-  components: { myButton },
+  components: { myButton, Titles },
   name: "Award",
 };
 </script>
@@ -52,41 +42,13 @@ export default {
 }
 
 .triangle {
-  // display: flex;
-  // justify-content: center;
   position: absolute;
   bottom: 0;
   width: 100vw;
   // transform: rotate(180deg);
 }
 
-ul {
-  list-style: none;
-  li {
-    display: inline-block;
-    font-size: 26px;
-  }
-}
-
-.display-5 {
-  font-size: 80px;
-}
-
-.hero {
-  width: 80%;
-}
-
-hr.ochre {
-  height: 4px;
-  color: $ochre;
-}
-
 .ochre {
   color: $ochre;
-}
-
-hr {
-  font-size: 10px;
-  opacity: 1;
 }
 </style>

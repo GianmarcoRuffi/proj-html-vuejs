@@ -2,16 +2,18 @@
   <div id="app">
     <Header />
     <Award />
+    <services />
   </div>
 </template>
 
 <script>
 import Header from "./components/Header.vue";
 import Award from "./components/Award.vue";
+import Services from "./components/Services.vue";
 
 export default {
   name: "App",
-  components: { Header, Award },
+  components: { Header, Award, Services },
 };
 </script>
 

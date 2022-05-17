@@ -26,6 +26,7 @@ export default {
   padding: 10px 40px;
   font-family: Arial, Helvetica, sans-serif;
   display: inline-block;
+  font-weight: bold;
 
   &:hover {
     color: white;
