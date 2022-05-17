@@ -47,7 +47,7 @@ export default {
 @import "./src/styles/vars.scss";
 
 #products {
-  height: 920px;
+  height: 980px;
   position: relative;
   color: white;
   background-position: top;

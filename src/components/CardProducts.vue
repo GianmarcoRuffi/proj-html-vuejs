@@ -37,12 +37,13 @@ export default {
     color: $ochre;
     font-weight: bold;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 
   p {
     color: $ochre;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
   }
 }
 
