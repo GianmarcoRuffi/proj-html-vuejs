@@ -14,6 +14,16 @@
         split trim and hair cut. Quick but careful and ridicolously good
         looking."
         />
+        <Card
+          imgURL="avadabarbers-washndry-icon.png"
+          title="Wash &amp; Dry"
+          text="Take a seat in our fine leather chairs, lean back and let us lather you a fresh head in a luxurious fashion."
+        />
+        <Card
+          imgURL="avadabarbers-beardtrim-icon.png"
+          title="Beard Tidy"
+          text="Tame the tangles and untidy facial hairs like a gentleman with our Beard Tidy services from Avada Barbers."
+        />
       </div>
       <div class="row"><my-button text="Read about our services" /></div>
     </div>

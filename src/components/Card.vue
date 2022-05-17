@@ -1,19 +1,13 @@
 <template>
-  <div class="container d-flex">
-    <div class="component-card col-4">
-      <div>
-        <img
-          :src="require(`../assets/img/${imgURL}`)"
-          alt=""
-          class="img-fluid"
-        />
-      </div>
-
-      <h1>{{ title }}</h1>
-      <p>
-        {{ text }}
-      </p>
+  <div class="component-card col-4">
+    <div>
+      <img :src="require(`../assets/img/${imgURL}`)" alt="" class="img-fluid" />
     </div>
+
+    <h1>{{ title }}</h1>
+    <p>
+      {{ text }}
+    </p>
   </div>
 </template>
 
