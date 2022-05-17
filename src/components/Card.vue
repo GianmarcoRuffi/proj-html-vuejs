@@ -1,8 +1,12 @@
 <template>
-  <div class="component-card col-4">
-    <div>
-      <img :src="require(`../assets/img/${imgURL}`)" alt="" class="img-fluid" />
-    </div>
+  <div
+    class="component-card col-3 d-flex flex-column justify-content-center align-items-center"
+  >
+    <img
+      :src="require(`../assets/img/${imgURL}`)"
+      alt="service"
+      class="img-fluid"
+    />
 
     <h1>{{ title }}</h1>
     <p>
@@ -26,14 +30,25 @@ export default {
 <style scoped lang="scss">
 @import "./src/styles/vars.scss";
 
+img {
+  height: 30%;
+}
+
 .component-card {
   text-align: center;
+  border: 1px solid transparent;
+
+  &:hover {
+    cursor: pointer;
+    border: 1px solid grey;
+    border-radius: 10%;
+  }
 
   h1 {
     color: $ochre;
     font-weight: bold;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   p {
