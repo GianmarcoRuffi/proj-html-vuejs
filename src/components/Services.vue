@@ -8,7 +8,6 @@
       </div>
       <div class="row"><my-button text="Read about our services" /></div>
     </div>
-
     <div class="triangle">
       <svg
         class="fusion-big-triangle-candy"
@@ -18,7 +17,7 @@
         height="100"
         viewBox="0 0 100 100"
         preserveAspectRatio="none"
-        style="fill: ##121314; padding: 0"
+        style="fill: #121314; padding: 0"
       >
         <path d="M0 100 L50 2 L100 100 Z"></path>
       </svg>
@@ -40,5 +39,13 @@ export default {
 
 #services {
   height: 600px;
+  position: relative;
+}
+
+.triangle {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  // transform: rotate(180deg);
 }
 </style>

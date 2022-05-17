@@ -3,6 +3,7 @@
     <Header />
     <Award />
     <services />
+    <products />
   </div>
 </template>
 
@@ -10,10 +11,11 @@
 import Header from "./components/Header.vue";
 import Award from "./components/Award.vue";
 import Services from "./components/Services.vue";
+import Products from "./components/Products.vue";
 
 export default {
   name: "App",
-  components: { Header, Award, Services },
+  components: { Header, Award, Services, Products },
 };
 </script>
 
