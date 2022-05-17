@@ -2,10 +2,10 @@
   <div class="container">
     <div class="row d-flex justify-content-center align-items-center">
       <div class="col-12 d-flex justify-content-center align-items-center">
-        <h2 class="display-3 py-2 ochre">{{ text1 }}</h2>
+        <h2 class="display-3 ochre">{{ text1 }}</h2>
       </div>
       <div class="col-12 d-flex justify-content-center align-items-center">
-        <h1 class="display-5 py-2">{{ text2 }}</h1>
+        <h1 class="display-5">{{ text2 }}</h1>
       </div>
     </div>
   </div>

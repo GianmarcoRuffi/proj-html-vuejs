@@ -1,7 +1,7 @@
 <template>
   <section id="about">
     <div
-      class="container d-flex flex-column justify-content-center align-items-center"
+      class="container h-100 d-flex flex-column justify-content-center align-items-center"
     >
       <div class="row">
         <titles text1="Award Winning" text2="Pro Barbers" />
@@ -40,12 +40,16 @@ export default {
 @import "./src/styles/vars.scss";
 
 #about {
-  height: 550px;
+  height: 520px;
   position: relative;
   color: white;
   background-position: top;
   background-size: cover;
   background-image: url("../assets/img/avadabarbers-about-introbackground.jpg");
+}
+
+.container.h-100 {
+  padding-bottom: 100px;
 }
 
 .triangle {
