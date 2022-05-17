@@ -6,7 +6,15 @@
       <div class="row">
         <titles text1="Mens Grooming" text2="Services" />
       </div>
-      <div class="row"><Card /></div>
+      <div class="row">
+        <Card
+          imgURL="avadabarbers-trimcut-icon-before.png"
+          title="Trim &amp; Cut"
+          text="Avada Barbers are experts in the lickety
+        split trim and hair cut. Quick but careful and ridicolously good
+        looking."
+        />
+      </div>
       <div class="row"><my-button text="Read about our services" /></div>
     </div>
 

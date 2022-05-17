@@ -1,18 +1,17 @@
 <template>
   <div class="container d-flex">
-    <div class="component-card col-3">
+    <div class="component-card col-4">
       <div>
         <img
-          src="../assets/img/avadabarbers-homepage-hero-bg.jpg"
+          :src="require(`../assets/img/${imgURL}`)"
           alt=""
           class="img-fluid"
         />
       </div>
 
-      <h1>Prova</h1>
+      <h1>{{ title }}</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quaerat
-        illum eius doloribus excepturi repellendus quia maiores sint
+        {{ text }}
       </p>
     </div>
   </div>
@@ -23,7 +22,7 @@ export default {
   name: "Card",
 
   props: {
-    img: Image,
+    imgURL: String,
     title: String,
     text: String,
   },
