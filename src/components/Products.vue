@@ -6,7 +6,28 @@
       <div class="row">
         <titles text1="We have you covered" text2="Avada Grooming Products" />
       </div>
-
+      <div class="row justify-content-center">
+        <card-products
+          imgURL="brush_dark-400x400.png"
+          name="Brush"
+          price="15.00"
+        />
+        <card-products
+          imgURL="scissors-400x400.png"
+          name="Scissors"
+          price="85.00"
+        />
+        <card-products
+          imgURL="hot_oil_dark-400x400.png"
+          name="Hot Oil"
+          price="15.00"
+        />
+        <card-products
+          imgURL="straight_razor_dark-400x400.png"
+          name="Straight Razor"
+          price="30.00"
+        />
+      </div>
       <div class="row"><my-button text="Shop our product range" /></div>
     </div>
   </section>
@@ -15,8 +36,9 @@
 <script>
 import myButton from "./myButton.vue";
 import Titles from "./Titles.vue";
+import CardProducts from "./CardProducts.vue";
 export default {
-  components: { myButton, Titles },
+  components: { myButton, Titles, CardProducts },
   name: "Products",
 };
 </script>
