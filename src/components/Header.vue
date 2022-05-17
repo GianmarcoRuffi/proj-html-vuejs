@@ -1,7 +1,7 @@
 <template>
   <section id="jumbotron">
     <div class="container hero h-100 py-4">
-      <div class="row d-flex justify-content-between">
+      <div class="mini-header row d-flex justify-content-between">
         <div class="col-7 col-md-8 col-lg-3">
           <img
             src="../assets/img/avadabarbers-logo-x1.png"
@@ -23,7 +23,7 @@
         <div class="col-12 col-lg-6">
           <h1 class="display-5 py-2">Barber Shop</h1>
           <hr class="ochre" />
-          <p class="lead py-2">The pinnacle of male grooming</p>
+          <p class="lead py-2">The Pinnacle of Male Grooming</p>
           <p class="lead">
             <my-button text="Learn More" />
           </p>
@@ -57,22 +57,36 @@ export default {
 #jumbotron {
   height: 980px;
   position: relative;
-  color: white;
+  color: #c8c7c7;
   background-position: center;
   background-size: cover;
   background-image: url("../assets/img/avadabarbers-homepage-hero-bg.jpg");
+}
+
+.mini-header {
+  padding-top: 15px;
+}
+
+.lead.py-2 {
+  color: #505050;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 ul {
   list-style: none;
   li {
     display: inline-block;
-    font-size: 26px;
+    font-size: 23px;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
   }
 }
 
 .display-5 {
   font-size: 80px;
+  font-weight: bold;
 }
 
 .hero {
@@ -87,5 +101,6 @@ hr.ochre {
 hr {
   font-size: 10px;
   opacity: 1;
+  width: 40%;
 }
 </style>
