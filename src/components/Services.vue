@@ -1,10 +1,12 @@
 <template>
   <section id="services">
-    <div class="container h-100">
-      <div
-        class="row h-100 d-flex justify-content-center align-items-center"
-      ></div>
-      <my-button />
+    <div
+      class="container h-100 d-flex flex-column justify-content-center align-items-center"
+    >
+      <div class="row">
+        <titles text1="Mens Grooming" text2="Services" />
+      </div>
+      <div class="row"><my-button text="Read about our services" /></div>
     </div>
 
     <div class="triangle">
@@ -26,8 +28,9 @@
 
 <script>
 import myButton from "./myButton.vue";
+import Titles from "./Titles.vue";
 export default {
-  components: { myButton },
+  components: { myButton, Titles },
   name: "Services",
 };
 </script>
