@@ -41,7 +41,14 @@
         </div>
       </div>
     </div>
-    <div class="bottom-footer"><my-button /></div>
+    <div class="bottom-footer">
+      <div class="container d-flex justify-content-center align-items-center">
+        <p class="infos">
+          © Copyright 2012 - 2022 | Avada Theme by <a href="#">ThemeFusion</a> |
+          All Rights Reserved | Powered by <a href="#">WordPress</a>
+        </p>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -69,6 +76,15 @@ export default {
   .bottom-footer {
     height: 150px;
     background-color: #171717;
+
+    .container {
+      height: 100%;
+    }
+
+    a {
+      text-decoration: none;
+      color: $ochre;
+    }
   }
 }
 
