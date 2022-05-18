@@ -21,13 +21,13 @@
               />
             </div>
 
-            <p class="infos">
-              Avada Barbers <br />
-              123 New York Street<br />
-              New York City<br />
-              info@yourwebsite.com<br />
-              +1 (555) 555-1212
-            </p>
+            <ul class="infos">
+              <li>Avada Barbers</li>
+              <li>123 New York Street</li>
+              <li>New York City</li>
+              <li>info@yourwebsite.com</li>
+              <li>+1 (555) 555-1212</li>
+            </ul>
 
             <h5>Follow us</h5>
             <div class="socials">
@@ -52,8 +52,9 @@
     <div class="bottom-footer">
       <div class="container d-flex justify-content-center align-items-center">
         <p class="infos">
-          © Copyright 2012 - 2022 | Avada Theme by <a href="#">ThemeFusion</a> |
-          All Rights Reserved | Powered by <a href="#">WordPress</a>
+          &#169; Copyright 2012 - 2022 | Avada Theme by
+          <a href="#">ThemeFusion</a> | All Rights Reserved | Powered by
+          <a href="#">WordPress</a>
         </p>
       </div>
     </div>
@@ -91,6 +92,16 @@ export default {
       text-transform: uppercase;
       font-family: Arial, Helvetica, sans-serif;
     }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 20px;
+
+      li {
+        padding-top: 5px;
+      }
+    }
   }
 
   .bottom-footer {
@@ -112,6 +123,16 @@ export default {
   color: #5c5c5c;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+}
+
+.socials {
+  i {
+    padding: 10px;
+    &:hover {
+      cursor: pointer;
+      color: $ochre;
+    }
+  }
 }
 
 .component-card {
