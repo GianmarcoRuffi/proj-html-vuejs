@@ -8,21 +8,11 @@
       </div>
       <div class="row justify-content-center py-4">
         <Card
-          imgURL="avadabarbers-trimcut-icon-before.png"
-          title="Trim &amp; Cut"
-          text="Avada Barbers are experts in the lickety
-        split trim and hair cut. Quick but careful and ridicolously good
-        looking."
-        />
-        <Card
-          imgURL="avadabarbers-washndry-icon.png"
-          title="Wash &amp; Dry"
-          text="Take a seat in our fine leather chairs, lean back and let us lather you a fresh head in a luxurious fashion."
-        />
-        <Card
-          imgURL="avadabarbers-beardtrim-icon.png"
-          title="Beard Tidy"
-          text="Tame the tangles and untidy facial hairs like a gentleman with our Beard Tidy services from Avada Barbers."
+          v-for="(item, index) in serviceCards"
+          :key="index"
+          :imgURL="item.imgURL"
+          :title="item.title"
+          :text="item.text"
         />
       </div>
       <div class="row"><my-button text="Read about our services" /></div>
@@ -46,12 +36,18 @@
 </template>
 
 <script>
+import { serviceCards } from "../dati.js";
 import myButton from "./myButton.vue";
 import Titles from "./Titles.vue";
 import Card from "./Card.vue";
 export default {
   components: { myButton, Titles, Card },
   name: "Services",
+  data() {
+    return {
+      serviceCards: serviceCards,
+    };
+  },
 };
 </script>
 

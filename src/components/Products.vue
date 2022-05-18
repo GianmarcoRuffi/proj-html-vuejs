@@ -8,24 +8,11 @@
       </div>
       <div class="row justify-content-center py-4">
         <card-products
-          imgURL="brush_dark-400x400.png"
-          name="Brush"
-          price="15.00"
-        />
-        <card-products
-          imgURL="scissors-400x400.png"
-          name="Scissors"
-          price="85.00"
-        />
-        <card-products
-          imgURL="hot_oil_dark-400x400.png"
-          name="Hot Oil"
-          price="15.00"
-        />
-        <card-products
-          imgURL="straight_razor_dark-400x400.png"
-          name="Straight Razor"
-          price="30.00"
+          :imgURL="item.imgURL"
+          :name="item.name"
+          :price="item.price"
+          v-for="(item, index) in products"
+          :key="index"
         />
       </div>
       <div class="row"><my-button text="Shop our product range" /></div>
@@ -34,12 +21,18 @@
 </template>
 
 <script>
+import { products } from "../dati.js";
 import myButton from "./myButton.vue";
 import Titles from "./Titles.vue";
 import CardProducts from "./CardProducts.vue";
 export default {
   components: { myButton, Titles, CardProducts },
   name: "Products",
+  data() {
+    return {
+      products: products,
+    };
+  },
 };
 </script>
 
