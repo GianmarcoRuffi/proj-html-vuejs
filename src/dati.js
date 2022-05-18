@@ -56,3 +56,21 @@ export const reviews = [
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deserunt provident asperiores voluptates repellendus deleniti, ex distinctio autem! Fuga ut totam voluptatibus nihil assumenda quae et atque dolorum labore quasi.",
   },
 ];
+
+export const blogPosts = [
+  {
+    imgURL: "avadabarbers-second-blog-700x441.jpg",
+    title: "Avada Barbers Now Open",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper",
+  },
+  {
+    imgURL: "avadabarbers-choosing-blog-700x441.jpg",
+    title: "Choosing The Right Barber",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper",
+  },
+  {
+    imgURL: "avadabarbers-ourservice-blog-700x441.jpg",
+    title: "Quick Service Guide",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper",
+  },
+];
