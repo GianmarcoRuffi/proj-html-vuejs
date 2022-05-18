@@ -20,7 +20,7 @@
       <div class="row">
         <titles text1="Tales from the barber shop" text2="Recent Blog Posts" />
       </div>
-      <div class="row justify-content-center">
+      <div class="row justify-content-center py-4">
         <card-blog
           imgURL="avadabarbers-second-blog-700x441.jpg"
           title="Avada Barbers Now Open"

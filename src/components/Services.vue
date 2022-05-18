@@ -6,7 +6,7 @@
       <div class="row">
         <titles text1="Mens Grooming" text2="Services" />
       </div>
-      <div class="row justify-content-center">
+      <div class="row justify-content-center py-4">
         <Card
           imgURL="avadabarbers-trimcut-icon-before.png"
           title="Trim &amp; Cut"

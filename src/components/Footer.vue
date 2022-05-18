@@ -122,7 +122,7 @@ export default {
     ul {
       list-style: none;
       padding-left: 0;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
 
       li {
         padding-top: 5px;
@@ -152,6 +152,7 @@ export default {
 }
 
 .socials {
+  padding-top: 10px;
   i {
     padding: 10px;
     &:hover {

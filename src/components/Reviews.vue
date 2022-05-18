@@ -41,7 +41,7 @@
       <div class="row">
         <titles text1="What people say" text2="Reviews" />
       </div>
-      <div class="row justify-content-center">
+      <div class="row justify-content-center py-3">
         <card-reviews
           imgURL="avadabarbers-trimcut-gallery6.jpg"
           name="John Doe  "

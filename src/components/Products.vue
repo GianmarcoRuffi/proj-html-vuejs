@@ -6,7 +6,7 @@
       <div class="row">
         <titles text1="We have you covered" text2="Avada Grooming Products" />
       </div>
-      <div class="row justify-content-center">
+      <div class="row justify-content-center py-4">
         <card-products
           imgURL="brush_dark-400x400.png"
           name="Brush"
