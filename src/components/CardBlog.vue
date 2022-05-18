@@ -1,12 +1,14 @@
 <template>
   <div
-    class="component-card col-4 d-flex flex-column justify-content-center align-items-center"
+    class="component-card fixed-col d-flex flex-column justify-content-center align-items-center"
   >
-    <img
-      :src="require(`../assets/img/${imgURL}`)"
-      alt="service"
-      class="img-fluid"
-    />
+    <div class="img-wrap">
+      <img
+        :src="require(`../assets/img/${imgURL}`)"
+        alt="service"
+        class="img-fluid"
+      />
+    </div>
 
     <h1>{{ title }}</h1>
     <p>
@@ -29,6 +31,10 @@ export default {
 
 <style scoped lang="scss">
 @import "./src/styles/vars.scss";
+
+.fixed-col {
+  width: 30%;
+}
 
 .component-card {
   text-align: center;
