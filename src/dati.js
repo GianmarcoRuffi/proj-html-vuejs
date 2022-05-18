@@ -38,3 +38,21 @@ export const products = [
     price: "30.00",
   },
 ];
+
+export const reviews = [
+  {
+    imgURL: "avadabarbers-trimcut-gallery6.jpg",
+    name: "John Doe",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deserunt provident asperiores voluptates repellendus deleniti, ex distinctio autem! Fuga ut totam voluptatibus nihil assumenda quae et atque dolorum labore quasi.",
+  },
+  {
+    imgURL: "avadabarbers-trimcut-gallery7.jpg",
+    name: "Pete Jones",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deserunt provident asperiores voluptates repellendus deleniti, ex distinctio autem! Fuga ut totam voluptatibus nihil assumenda quae et atque dolorum labore quasi.",
+  },
+  {
+    imgURL: "avadabarbers-trimcut-gallery3.jpg",
+    name: "Mark Wilson",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deserunt provident asperiores voluptates repellendus deleniti, ex distinctio autem! Fuga ut totam voluptatibus nihil assumenda quae et atque dolorum labore quasi.",
+  },
+];

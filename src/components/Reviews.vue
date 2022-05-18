@@ -43,19 +43,11 @@
       </div>
       <div class="row justify-content-center py-3">
         <card-reviews
-          imgURL="avadabarbers-trimcut-gallery6.jpg"
-          name="John Doe  "
-          text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deserunt provident asperiores voluptates repellendus deleniti, ex distinctio autem! Fuga ut totam voluptatibus nihil assumenda quae et atque dolorum labore quasi."
-        />
-        <card-reviews
-          imgURL="avadabarbers-trimcut-gallery7.jpg"
-          name="Pete Jones"
-          text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deserunt provident asperiores voluptates repellendus deleniti, ex distinctio autem! Fuga ut totam voluptatibus nihil assumenda quae et atque dolorum labore quasi."
-        />
-        <card-reviews
-          imgURL="avadabarbers-trimcut-gallery3.jpg"
-          name="Mark Wilson"
-          text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deserunt provident asperiores voluptates repellendus deleniti, ex distinctio autem! Fuga ut totam voluptatibus nihil assumenda quae et atque dolorum labore quasi."
+          :imgURL="item.imgURL"
+          :name="item.name"
+          :text="item.text"
+          v-for="(item, index) in reviews"
+          :key="index"
         />
       </div>
     </div>
@@ -63,12 +55,18 @@
 </template>
 
 <script>
+import { reviews } from "../dati.js";
 import Titles from "./Titles.vue";
 import CardReviews from "./CardReviews.vue";
 import myButton from "./myButton.vue";
 export default {
   components: { Titles, CardReviews, myButton },
   name: "Reviews",
+  data() {
+    return {
+      reviews: reviews,
+    };
+  },
 };
 </script>
 
