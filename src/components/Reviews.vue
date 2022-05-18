@@ -129,6 +129,4 @@ export default {
   width: 100%;
   transform: rotate(180deg);
 }
-
-// prova
 </style>
