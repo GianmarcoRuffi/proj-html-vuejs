@@ -57,7 +57,7 @@
           <a href="#">WordPress</a>
         </p>
       </div>
-      <div id="scroll-toggle">
+      <div @click="scrollToTop" id="scroll-toggle">
         <a href=""><i class="fa-solid fa-chevron-up"></i></a>
       </div>
     </div>
@@ -70,6 +70,11 @@ import myButton from "./myButton.vue";
 export default {
   components: { myButton },
   name: "Footer",
+  methods: {
+    scrollToTop() {
+      window.scrollTo(0, 0);
+    },
+  },
 };
 </script>
 

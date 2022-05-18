@@ -68,7 +68,7 @@ import CardReviews from "./CardReviews.vue";
 import myButton from "./myButton.vue";
 export default {
   components: { Titles, CardReviews, myButton },
-  name: "Services",
+  name: "Reviews",
 };
 </script>
 
