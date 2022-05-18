@@ -64,7 +64,7 @@ export default {
 .triangle {
   position: absolute;
   top: 0;
-  width: 100vw;
+  width: 100%;
   transform: rotate(180deg);
 }
 </style>

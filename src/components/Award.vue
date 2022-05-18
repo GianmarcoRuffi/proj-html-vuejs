@@ -41,6 +41,7 @@ export default {
 
 #about {
   height: 520px;
+
   position: relative;
   color: white;
   background-position: top;
@@ -55,7 +56,7 @@ export default {
 .triangle {
   position: absolute;
   bottom: 0;
-  width: 100vw;
+  width: 100%;
   // transform: rotate(180deg);
 }
 
