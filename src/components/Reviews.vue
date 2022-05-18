@@ -5,24 +5,29 @@
     >
       <div class="featured container">
         <div class="row d-flex">
-          <div class="col-4">
+          <div class="col-4 butter-spot">
             <img
               :src="require(`../assets/img/shaving_butter-800x800.png`)"
               alt="service"
               class="img-fluid"
             />
           </div>
-          <div class="col-8">
+          <div
+            class="col-8 d-flex justify-content-center flex-column align-items-left"
+          >
             <titles
               text1="This months featured product"
               text2="Shaving butter"
             />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Pellentesque laoreet enim est, vel molestie dolor ultrices ut.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <my-button text="Buy now" />
+
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque laoreet enim est, vel molestie dolor ultrices ut.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+            <div><my-button text="Buy now" /></div>
           </div>
         </div>
       </div>
@@ -75,11 +80,21 @@ export default {
   position: absolute;
   top: -60px;
   max-width: 70%;
+  p {
+    color: #5c5c5c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+  }
 
-  .col-4 {
+  .butter-spot {
     background-image: url("../assets/img/avadabarbers-cta-background.jpg");
     background-position: top;
     background-size: cover;
+  }
+
+  .col-8 {
+    padding-left: 8%;
+    padding-right: 8%;
   }
 }
 
