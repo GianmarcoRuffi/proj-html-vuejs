@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <merchandise demos="Shop Now" deals="On Sale" />
+    <merchandise demos="Prebuilts" deals="Shopping" />
     <Header />
     <Award />
     <services />

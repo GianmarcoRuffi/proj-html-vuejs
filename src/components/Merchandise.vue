@@ -1,7 +1,11 @@
 <template>
   <div id="toggles-box">
-    <div class="toggle container d-flex my-2">{{ demos }}</div>
-    <div class="toggle container d-flex">{{ deals }}</div>
+    <div class="toggle container d-flex flex-column my-2">
+      <i class="fa-solid fa-images"></i> <span>{{ demos }}</span>
+    </div>
+    <div class="toggle container d-flex flex-column my-2">
+      <i class="fa-solid fa-cart-shopping"></i><span>{{ deals }}</span>
+    </div>
   </div>
 </template>
 
@@ -24,6 +28,15 @@ export default {
   z-index: 2;
   right: 15px;
   top: 15%;
+}
+
+span {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+i {
+  font-size: 22px;
 }
 
 .toggle {
