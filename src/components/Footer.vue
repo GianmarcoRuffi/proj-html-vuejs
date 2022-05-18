@@ -28,6 +28,14 @@
               info@yourwebsite.com<br />
               +1 (555) 555-1212
             </p>
+
+            <h5>Follow us</h5>
+            <div class="socials">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
           </div>
           <div
             class="component-card col-3 d-flex flex-column justify-content-center align-items-center"
@@ -71,6 +79,18 @@ export default {
   .top-footer {
     height: 550px;
     background-color: #0f0f0f;
+
+    .socials {
+      color: #5c5c5c;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+    }
+
+    h5 {
+      color: $ochre;
+      text-transform: uppercase;
+      font-family: Arial, Helvetica, sans-serif;
+    }
   }
 
   .bottom-footer {
