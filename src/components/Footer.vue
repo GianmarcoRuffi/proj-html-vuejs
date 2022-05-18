@@ -57,6 +57,9 @@
           <a href="#">WordPress</a>
         </p>
       </div>
+      <div id="scroll-toggle">
+        <a href=""><i class="fa-solid fa-chevron-up"></i></a>
+      </div>
     </div>
   </section>
 </template>
@@ -72,6 +75,29 @@ export default {
 
 <style scoped lang="scss">
 @import "./src/styles/vars.scss";
+
+#scroll-toggle {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5c5c5c;
+  color: white;
+  width: 50px;
+  height: 40px;
+  bottom: 0;
+  right: 5%;
+  border-radius: 5px;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: $ochre;
+  }
+}
 
 #footer {
   height: 700px;

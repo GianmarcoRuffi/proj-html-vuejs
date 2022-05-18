@@ -65,6 +65,8 @@ export default {
 
 .mini-header {
   padding-top: 15px;
+  // position: fixed;
+  z-index: 2;
 }
 
 .lead.py-2 {
@@ -74,6 +76,7 @@ export default {
 
 ul {
   list-style: none;
+
   li {
     display: inline-block;
     font-size: 23px;

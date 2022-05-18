@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <merchandise demos="Shop Now" deals="On Sale" />
     <Header />
     <Award />
     <services />
@@ -18,10 +19,20 @@ import Products from "./components/Products.vue";
 import Reviews from "./components/Reviews.vue";
 import BlogPosts from "./components/BlogPosts.vue";
 import Footer from "./components/Footer.vue";
+import Merchandise from "./components/Merchandise.vue";
 
 export default {
   name: "App",
-  components: { Header, Award, Services, Products, Reviews, BlogPosts, Footer },
+  components: {
+    Header,
+    Award,
+    Services,
+    Products,
+    Reviews,
+    BlogPosts,
+    Footer,
+    Merchandise,
+  },
 };
 </script>
 
@@ -32,5 +43,6 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  position: relative;
 }
 </style>
