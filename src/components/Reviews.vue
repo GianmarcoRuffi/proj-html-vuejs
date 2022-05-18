@@ -5,7 +5,9 @@
     >
       <div class="featured container">
         <div class="row d-flex">
-          <div class="col-4 butter-spot">
+          <div
+            class="col-4 butter-spot d-flex justify-content-center align-items-center"
+          >
             <img
               :src="require(`../assets/img/shaving_butter-800x800.png`)"
               alt="service"
@@ -15,10 +17,14 @@
           <div
             class="col-8 d-flex justify-content-center flex-column align-items-left"
           >
-            <titles
-              text1="This months featured product"
-              text2="Shaving butter"
-            />
+            <div class="row d-flex align-items-center">
+              <div class="col-12 d-flex align-items-center">
+                <h2 class="display-3 ochre">This months featured product</h2>
+              </div>
+              <div class="col-12 d-flex align-items-center">
+                <h1 class="display-5">Shaving Butter</h1>
+              </div>
+            </div>
 
             <div>
               <p>
@@ -75,11 +81,29 @@ export default {
 }
 
 .featured {
-  background-color: #121413;
-  max-height: 40%;
+  background-color: #000000;
+  max-height: 70%;
   position: absolute;
   top: -60px;
-  max-width: 70%;
+  max-width: 60%;
+  border-top: 4px solid $ochre;
+
+  .display-5 {
+    font-size: 70px;
+    font-weight: bolder;
+    color: #b1b1b1;
+  }
+
+  .display-3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .ochre {
+    color: $ochre;
+  }
   p {
     color: #5c5c5c;
     font-family: Arial, Helvetica, sans-serif;
@@ -90,6 +114,7 @@ export default {
     background-image: url("../assets/img/avadabarbers-cta-background.jpg");
     background-position: top;
     background-size: cover;
+    height: 450px;
   }
 
   .col-8 {
