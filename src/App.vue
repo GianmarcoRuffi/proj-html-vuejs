@@ -5,6 +5,7 @@
     <services />
     <products />
     <reviews />
+    <blog-posts />
   </div>
 </template>
 
@@ -14,10 +15,11 @@ import Award from "./components/Award.vue";
 import Services from "./components/Services.vue";
 import Products from "./components/Products.vue";
 import Reviews from "./components/Reviews.vue";
+import BlogPosts from "./components/BlogPosts.vue";
 
 export default {
   name: "App",
-  components: { Header, Award, Services, Products, Reviews },
+  components: { Header, Award, Services, Products, Reviews, BlogPosts },
 };
 </script>
 

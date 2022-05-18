@@ -79,7 +79,7 @@ ul {
     font-size: 23px;
     &:hover {
       cursor: pointer;
-      opacity: 0.8;
+      color: $ochre;
     }
   }
 }
