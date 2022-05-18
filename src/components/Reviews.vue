@@ -87,7 +87,6 @@ export default {
   top: -60px;
   max-width: 60%;
   border-top: 4px solid $ochre;
-
   .display-5 {
     font-size: 70px;
     font-weight: bolder;
@@ -104,6 +103,7 @@ export default {
   .ochre {
     color: $ochre;
   }
+
   p {
     color: #5c5c5c;
     font-family: Arial, Helvetica, sans-serif;
