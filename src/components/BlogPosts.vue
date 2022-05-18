@@ -21,17 +21,17 @@
         <titles text1="Tales from the barber shop" text2="Recent Blog Posts" />
       </div>
       <div class="row justify-content-center">
-        <Card
+        <card-blog
           imgURL="avadabarbers-second-blog-700x441.jpg"
           title="Avada Barbers Now Open"
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper"
         />
-        <Card
+        <card-blog
           imgURL="avadabarbers-choosing-blog-700x441.jpg"
           title="Choosing The Right Barber"
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper"
         />
-        <Card
+        <card-blog
           imgURL="avadabarbers-ourservice-blog-700x441.jpg"
           title="Quick Service Guide"
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper"
@@ -45,9 +45,9 @@
 <script>
 import myButton from "./myButton.vue";
 import Titles from "./Titles.vue";
-import Card from "./Card.vue";
+import CardBlog from "./CardBlog.vue";
 export default {
-  components: { myButton, Titles, Card },
+  components: { myButton, Titles, CardBlog },
   name: "BlogPosts",
 };
 </script>
