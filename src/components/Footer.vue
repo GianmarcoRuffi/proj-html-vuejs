@@ -12,6 +12,23 @@
 
             <my-button text="Shop our range now" />
           </div>
+          <div class="middle-row col-3 d-flex align-items-center flex-column">
+            <div class="d-block">
+              <img
+                src="../assets/img/avadabarbers-logo-x1.png"
+                alt="barber"
+                class="img-fluid"
+              />
+            </div>
+
+            <p class="infos">
+              Avada Barbers <br />
+              123 New York Street<br />
+              New York City<br />
+              info@yourwebsite.com<br />
+              +1 (555) 555-1212
+            </p>
+          </div>
           <div
             class="component-card col-3 d-flex flex-column justify-content-center align-items-center"
           >
@@ -53,6 +70,12 @@ export default {
     height: 150px;
     background-color: #171717;
   }
+}
+
+.infos {
+  color: #5c5c5c;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 
 .component-card {
