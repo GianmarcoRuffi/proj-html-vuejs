@@ -6,6 +6,7 @@
     <products />
     <reviews />
     <blog-posts />
+    <Footer />
   </div>
 </template>
 
@@ -16,10 +17,11 @@ import Services from "./components/Services.vue";
 import Products from "./components/Products.vue";
 import Reviews from "./components/Reviews.vue";
 import BlogPosts from "./components/BlogPosts.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
-  components: { Header, Award, Services, Products, Reviews, BlogPosts },
+  components: { Header, Award, Services, Products, Reviews, BlogPosts, Footer },
 };
 </script>
 
