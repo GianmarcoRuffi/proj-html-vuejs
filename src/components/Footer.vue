@@ -22,11 +22,9 @@
             </div>
 
             <ul class="infos">
-              <li>Avada Barbers</li>
-              <li>123 New York Street</li>
-              <li>New York City</li>
-              <li>info@yourwebsite.com</li>
-              <li>+1 (555) 555-1212</li>
+              <li v-for="(item, index) in footerInfos" :key="index">
+                {{ item.text }}
+              </li>
             </ul>
 
             <h5>Follow us</h5>
@@ -65,11 +63,22 @@
 </template>
 
 <script>
+import { footerInfos } from "../dati.js";
 import myButton from "./myButton.vue";
 
 export default {
   components: { myButton },
   name: "Footer",
+
+  props: {
+    text: String,
+  },
+
+  data() {
+    return {
+      footerInfos: footerInfos,
+    };
+  },
   methods: {
     scrollToTop() {
       window.scrollTo(0, 0);

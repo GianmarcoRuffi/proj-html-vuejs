@@ -74,3 +74,11 @@ export const blogPosts = [
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper",
   },
 ];
+
+export const footerInfos = [
+  { text: "Avada Barbers" },
+  { text: "123 New York Street" },
+  { text: "New York City" },
+  { text: "info@yourwebsite.com" },
+  { text: "+1 (555) 555-1212" },
+];
