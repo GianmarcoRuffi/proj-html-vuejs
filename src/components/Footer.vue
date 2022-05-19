@@ -56,7 +56,7 @@
         </p>
       </div>
       <div @click="scrollToTop" id="scroll-toggle">
-        <a href=""><i class="fa-solid fa-chevron-up"></i></a>
+        <span><i class="fa-solid fa-chevron-up"></i></span>
       </div>
     </div>
   </section>
